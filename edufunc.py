@@ -81,7 +81,7 @@ def TryLogin():
 
 def Attendance(cookie, login):
     '''
-    该函数尝试签到，接收一个cookie字典以及登录名
+    该函数尝试签到，接收一个cookie字典以及登录名，就结果来说，只接受一个cookie也能推出login，但节省一点代码，暂时这样吧
     '''
     config = ConfigParser()
     config.read('set.ini', encoding='utf-8')
